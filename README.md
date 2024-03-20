@@ -50,11 +50,21 @@ algorithm, focus on the behavior. "For input X I expect Y to happen."
    All tests are green? Commit!
 
 4. Refactor the implementation for clarity. This means that the behavior *must* stay the same. Run your tests after each change.<br/>
-   All tests are green? Commit!
+   All tests are green? Commit (or amend)!
 
 5. Go to 1, choosing the next test case. Which one you choose depends on a number of factors and is mostly based on experience
    or trade-offs. Try to think of reasons why you would choose a certain test over another one. If you can't think of good reasons
    why any particular one should be the next, choose a random test case and learn from the result.
+
+## Next Steps
+
+Looking for a challenge? Try these:
+
+- Implement serialization/formatting (i.e., from integer to string).
+- Try the same (parsing and/or formatting) for an IEEE 754 floating point number.
+- Integrate into the (remote) main branch ("trunk") on each integrateable state. That means: All tests pass, and the implemented
+  set of behaviors is usuable as is. E.g., some of the parser's behaviors (like bounds checking) are strictly necessary, while others
+  might be optional for now and can be added in small increments (like allowing "-0" or hex representations as inputs).
 
 ___
 
